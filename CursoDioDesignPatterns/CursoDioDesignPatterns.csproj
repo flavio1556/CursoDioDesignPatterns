@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>CursoDioDesignPatterns\CursoDioDesignPatterns\CursoDioDesignPatterns.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CursoDioDesignPatterns.Domain\CursoDioDesignPatterns.Domain.csproj" />
+    <ProjectReference Include="..\CursoDioDesignPatterns.Infra\CursoDioDesignPatterns.Infra.csproj" />
+  </ItemGroup>
+
+
+</Project>
